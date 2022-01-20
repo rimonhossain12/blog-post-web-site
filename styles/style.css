@@ -12,7 +12,6 @@ html{
     background-color: #fafafa;
     font-size: 62.5%;
     scroll-behavior: smooth;
-    /* font-family: 'Italianno',cursive; */
     /* font-family: 'Open Sans',
     sans-serif; */
     font-family: 'Roboto',sans-serif;
@@ -27,6 +26,33 @@ body{
 .text-justify{
     text-align: justify;
 }
+.text-white{
+    color: white;
+}
+.section-heading{
+    font-size: 8rem;
+    text-align: center;
+    font-family: 'Italianno',cursive
+}
+.section-center{
+     display: flex;
+     flex-direction:column;
+     align-content: center;
+     justify-content: space-evenly;
+}
+.btn{
+    background-color: rgb(230,159,8);
+    border: none;
+    border-radius: 0.6rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem #222;
+    cursor: pointer;
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    color: white;
+}
+
 /* reset code and common code ends here */
 
 /* header starts here */
@@ -108,8 +134,47 @@ nav li:hover{
     height: 55rem;
     border: 0.3rem solid;
 }
-
 /* banner section ends here */
+
+/* blog-about starts here */
+#blog-about{
+    min-height: 95vh;
+    padding: 5rem 1rem;
+    background-color: #4c4c4c;   
+}
+.card-container{
+    display: flex;
+    align-content: center;
+}
+.card{
+    flex: 1;
+    border-radius: 0.6rem;
+    background-color: #a09d9d;
+    padding: 3rem 1rem;
+    margin:2rem;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s;
+}
+.card:hover{
+    transform:scale(1.1);
+}
+.card-header{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.card-description{
+    padding: 0.4rem 0;
+    text-align: justify;
+    font-size: 1.6rem;
+    margin-bottom: 5rem;
+}
+.card-btn{
+    align-self: center;
+    width: 80%;
+}
+/* blog-about ends here */
 
 /* responsive start here */
 @media (max-width: 992px){
