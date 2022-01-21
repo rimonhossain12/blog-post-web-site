@@ -54,7 +54,7 @@ body{
     padding: 1rem 0;
     letter-spacing: 0.1rem;
     text-transform: uppercase;
-    color: white;
+    /* color: white; */
 }
 
 /* reset code and common code ends here */
@@ -132,7 +132,6 @@ nav li:hover{
     text-align: center;
 
 }
-
 .banner-img {
     width: 55rem;
     height: 55rem;
@@ -142,8 +141,6 @@ nav li:hover{
 
 /* blog-about starts here */
 #blog-about{
-    min-height: 95vh;
-    padding: 5rem 1rem;
     background-color: #4c4c4c;   
 }
 .card-container{
@@ -181,10 +178,8 @@ nav li:hover{
 /* blog-about ends here */
 
 /* archives stars here  */
-#archives{
-    padding: 5rem 1rem;
-    min-height: 95vh;
-}
+#archives{}
+
 .archives-container{
     display: flex;
     justify-content: space-evenly;
@@ -214,12 +209,9 @@ nav li:hover{
 /* archives ends here  */
 
 /* blog-posts start here */
-#blog-posts{
+#blog-posts{}
+.blog-posts-heading{}
 
-}
-.blog-posts-heading{
-   
-}
 .blog-post{
     margin: 0 auto;
     margin-bottom: 2rem;
@@ -269,6 +261,57 @@ nav li:hover{
 
 /* blog-posts ends here */
 
+/* contact form start here  */
+form#contact-form{
+    margin: 0 auto;
+}
+#contact-section{
+    background-color: #4c4c4c;
+    /* text-align: center; */
+    /* width: 100%; */
+}
+#contact-form{
+    padding: 1rem;
+     box-shadow: 0.1rem 0.1rem 0.1rem #2222,
+     -0.1rem 0 0.1rem #222;
+     margin: 1rem;
+     color: #fff;
+     display: flex;
+     flex-direction: column;
+}
+
+.form-control {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-control label{
+    font-size: 1.6rem;
+    flex:0.3;
+}
+input,textarea{
+    flex:0.7;
+    width: 40rem;
+    font-size: 1.6rem;
+    padding: 2rem 1rem;
+    border: none;
+    border-radius: 0.6rem;
+}
+textarea{
+    resize: none;
+    height: 12vh;
+}
+.form-btn-field{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact-btn{
+    width: 30%;
+}
+/* contact form ends here  */
+
 /* responsive start here */
 @media (max-width: 992px){
     #blog-banner-section{
@@ -308,6 +351,10 @@ nav li:hover{
         flex-direction: column;
         margin-bottom: 3rem;
         width: 80%;
+    }
+    #contact-section{
+        min-height: auto;
+
     }
 }
 @media (max-width: 600px) {
@@ -352,6 +399,15 @@ nav li:hover{
        }
         .blog-post {
             width: 90%;
+        }
+        #contact-form{
+            width: 90%;
+        }
+        .form-control{
+            flex-direction: column;
+        }
+        .form-control label{
+            margin-bottom: 0.5rem;
         }
 }
 @media (max-width: 400px) {
